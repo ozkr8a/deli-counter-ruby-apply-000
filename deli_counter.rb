@@ -13,11 +13,21 @@
     end
   end
   
-  def take_a_number(deli, name)  #Adds a person to the line. Assigns number, or position.
+  # def take_a_number(deli, name)  #Adds a person to the line. Assigns number, or position.
     
-    deli << name
+  #   deli << name
     
-    puts "Welcome, #{name}. You are number #{deli.index(name) + 1} in line."
+  #   puts "Welcome, #{name}. You are number #{deli.index(name) + 1} in line."
+  # end
+  
+  def take_a_number(deli)
+    
+    ticket = 1
+    deli << ticket
+    
+    puts "Welcome, You are number #{ticket} in line."
+    ticket += 1
+    
   end
   
   def now_serving(deli)  #Shows who is being served and moves the queue up
