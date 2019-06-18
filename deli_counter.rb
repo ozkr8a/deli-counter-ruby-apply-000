@@ -1,3 +1,5 @@
+  $ticket = 1
+  
   def line(deli) #Checks if the line is empty. If people are in line, it will show their name and position in the line.
     
     if deli == []              
@@ -22,11 +24,10 @@
   
   def take_a_number(deli)
     
-    ticket = 1
-    deli << ticket
+    deli << $ticket
     
-    puts "Welcome, You are number #{ticket} in line."
-    ticket += 1
+    puts "Welcome, You are number #{$ticket} in line."
+    $ticket += 1
     
   end
   
